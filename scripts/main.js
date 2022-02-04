@@ -4,7 +4,7 @@ $(document).ready(function() {
   AOS.init({
     // uncomment below for on-scroll animations to played only once
     // once: true
-    new Audio('music.mp3').play();
+    // new Audio('music.mp3').play();
   }); // initialize animate on scroll library 
 });
 
