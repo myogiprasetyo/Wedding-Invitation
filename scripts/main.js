@@ -4,7 +4,9 @@ $(document).ready(function() {
   AOS.init({
     // uncomment below for on-scroll animations to played only once
     // once: true 
-  }); // initialize animate on scroll library    
+  }); // initialize animate on scroll library
+
+  $(".ww-footer").trigger("click");
 });
 
 var music = new Audio("music.mp3");
@@ -126,6 +128,6 @@ $( function() {
 
 });
 
-$(document).ready(function() {      
-  music.play();
+$(".ww-footer").on("click", function() {      
+   music.play();
 });
