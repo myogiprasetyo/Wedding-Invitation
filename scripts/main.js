@@ -6,7 +6,7 @@ $(document).ready(function() {
     // once: true 
   }); // initialize animate on scroll library 
 
-  $("#music-background")[0].src += "?autoplay=1";
+  
 });
 
 // Smooth scroll for links with hashes
