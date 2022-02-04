@@ -6,7 +6,8 @@ $(document).ready(function() {
     // once: true 
   }); // initialize animate on scroll library
 
-  $(".ww-footer").trigger("click");
+  $('#to').append(getUrlParameter('to').replace(/\+/g, ' '));
+   $('#invitation').modal('show');
 });
 
 var music = new Audio("music.mp3");
@@ -123,11 +124,28 @@ $( function() {
   }).on("click", function() {
     $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
   });
-
-
-
 });
 
-$(".ww-footer").on("click", function() {      
+$('#invitation').modal({backdrop: 'static', keyboard: false})
+
+$(".open-invitation").on("click", function() {      
    music.play();
+    window.scrollTo(0, 0);
+   $('#invitation').modal('hide'); 
 });
+
+var getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = window.location.search.substring(1),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+          return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+      }
+  }
+  return false;
+};

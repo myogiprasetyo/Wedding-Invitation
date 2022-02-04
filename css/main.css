@@ -260,3 +260,35 @@ body {
       font-size: 14px;
     }
   }
+
+  #invitation .modal-body {
+    background: url("../images/invitation.JPG") no-repeat center center;
+    background-size: 750px;
+    background-position: 53%;
+    height: 90vh;
+    min-height: 600px;
+  }
+
+  #invitation .modal-body:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+  .open-invitation {
+    background-color: #694E4E;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+  }
+
+  .modal-backdrop
+{
+    opacity:1 !important;
+}
