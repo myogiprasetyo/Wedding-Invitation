@@ -4,10 +4,10 @@ $(document).ready(function() {
   AOS.init({
     // uncomment below for on-scroll animations to played only once
     // once: true 
-  }); // initialize animate on scroll library 
-
-  
+  }); // initialize animate on scroll library    
 });
+
+var music = new Audio("music.mp3");
 
 // Smooth scroll for links with hashes
 $("a.smooth-scroll").click(function(event) {
@@ -126,3 +126,7 @@ $( function() {
 
 });
 
+$(".ww-footer").on("click", function() {
+      
+  music.play();
+});
