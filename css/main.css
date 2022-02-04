@@ -111,11 +111,17 @@ body {
   border-radius: none; }
 
 @media (max-width: 992px) {
+  .ww-home-page {
+    background-position: 30%;
+  }
   .ww-photo-gallery .card-columns {
     -moz-column-count: 2;
          column-count: 2; } }
 
 @media (max-width: 576px) {
+  .ww-home-page {
+    background-position: 30%;
+  }
   .ww-photo-gallery .card-columns {
     -moz-column-count: 1;
          column-count: 1; } }
@@ -242,6 +248,9 @@ body {
   }
 
   @media (max-width: 480px) {
+    .ww-home-page {
+      background-position: 30%;
+    }
     .styled div {
       display: inline-block;
       margin-left: 10px;
