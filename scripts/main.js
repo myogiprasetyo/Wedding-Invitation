@@ -126,7 +126,6 @@ $( function() {
 
 });
 
-$(".ww-footer").on("click", function() {
-      
+$(document).ready(function() {      
   music.play();
 });
