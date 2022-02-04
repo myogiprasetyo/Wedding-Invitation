@@ -5,6 +5,9 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true
   }); // initialize animate on scroll library
+
+  // Music
+  new Audio('music.mp3').play()
 });
 
 // Smooth scroll for links with hashes
@@ -123,3 +126,4 @@ $( function() {
 
 
 });
+
