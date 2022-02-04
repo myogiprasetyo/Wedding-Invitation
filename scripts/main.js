@@ -3,9 +3,10 @@
 $(document).ready(function() {
   AOS.init({
     // uncomment below for on-scroll animations to played only once
-    // once: true
-    // new Audio('music.mp3').play();
+    // once: true 
   }); // initialize animate on scroll library 
+
+  $("#music-background")[0].src += "?autoplay=1";
 });
 
 // Smooth scroll for links with hashes
